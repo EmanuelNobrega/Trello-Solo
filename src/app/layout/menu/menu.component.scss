@@ -1,0 +1,17 @@
+.menu-background{
+  background-color: indigo;
+  color: white;
+  display: flex;
+  align-items: center;
+  button{
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 3px;
+  }
+  h1{
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+

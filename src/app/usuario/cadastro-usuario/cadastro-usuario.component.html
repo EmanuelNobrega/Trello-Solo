@@ -1,0 +1,26 @@
+<mat-card class="card-insercao-usuario">
+  <mat-card-header>
+    <mat-card-title>Criar Card</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field appearance="fill" class="mat-form-simples">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="usuario.nome" placeholder="Nome do Evento">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="mat-form-simples">
+      <mat-label>Data</mat-label>
+      <input matInput [(ngModel)]="usuario.cpf" placeholder="Dia do Evento">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="mat-form-simples">
+      <mat-label>Informações</mat-label>
+      <input  matInput [(ngModel)]="usuario.idade" placeholder="Informações do Evento">
+    </mat-form-field>
+
+    <button mat-stroked-button color="primary" (click)="inserirUsuario()">
+      <mat-icon *ngIf="operacaoCadastro">add</mat-icon>
+      <mat-icon *ngIf="!operacaoCadastro">edit</mat-icon>
+    </button>
+  </mat-card-content>
+</mat-card>
