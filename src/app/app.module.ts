@@ -11,10 +11,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './components/signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { CreatetaskComponent } from './components/createtask/createtask.component';
+import { ListtasksComponent } from './components/listtasks/listtasks.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignupComponent,
+    LoginComponent,
+    HomepageComponent,
+    CreatetaskComponent,
+    ListtasksComponent
   ],
   imports: [
     AppRoutingModule,

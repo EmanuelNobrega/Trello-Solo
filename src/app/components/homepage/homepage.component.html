@@ -1,0 +1,17 @@
+
+<div class="container">
+    <h1 class="mt-5 home_header border border-white bg-warning">Lista de Colaboradores</h1>
+    <div class="cardscont">
+        <mat-card *ngFor="let user of users" class="mat-card-listusr" fxFlex="20%">
+          <mat-card-header>
+            <mat-card-title>
+                Nome: {{user.nome}}
+            </mat-card-title>
+            <mat-card-subtitle *ngIf="user.email">
+                Email: {{user.email}}
+            </mat-card-subtitle>
+          </mat-card-header>
+          <button mat-stroked-button class="usrcardbtn">VER TASKS</button>
+        </mat-card>
+    </div>
+</div>

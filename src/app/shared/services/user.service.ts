@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {Usuario} from '../model/usuario';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import { User } from '../model/user';
@@ -10,17 +9,18 @@ import { User } from '../model/user';
 
 export class UserService {
 
-  URL_USUARIOS = 'http://localhost:4200/signup';
+  URL_USERS = 'http://localhost:3000/users';
+  URL_TASKS = 'http://localhost:3000/tasks'
 
   constructor(private httpClient: HttpClient) {
   }
 
-  // listar(): Observable<User[]> {
-  //   return this.httpClient.get<Usuario[]>(this.URL_USUARIOS);
-  // }
+  list(): Observable<User[]> {
+    return this.httpClient.get<User[]>(this.URL_USERS);
+  }
 
   create(user: User): Observable<User> {
-    return this.httpClient.post<User>(this.URL_USUARIOS, user);
+    return this.httpClient.post<User>(this.URL_USERS, user);
   }
 
   // remover(id: number): Observable<object> {

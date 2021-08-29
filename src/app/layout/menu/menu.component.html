@@ -9,6 +9,8 @@
       <button mat-button [matMenuTriggerFor]="menu">Opções</button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item [routerLink]="['/signup']">Cadastro</button>
+        <button mat-menu-item [routerLink]="['/createtask']">Create Task</button>
+        <button mat-menu-item [routerLink]="['/listtasks']">List Tasks</button>
         <button mat-menu-item [routerLink]="['/login']">Login</button>
       </mat-menu>      
     </div>

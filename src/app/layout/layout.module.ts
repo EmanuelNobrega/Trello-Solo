@@ -5,10 +5,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
-import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
-  declarations: [MenuComponent, HomepageComponent],
+  declarations: [MenuComponent],
   exports: [
     MenuComponent
   ],
