@@ -1,24 +1,19 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {CadastroUsuarioComponent} from './usuario/cadastro-usuario/cadastro-usuario.component';
-import {ListagemUsuarioComponent} from './usuario/listagem-usuario/listagem-usuario.component';
+import { LoginComponent } from './user/login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HomepageComponent } from './layout/homepage/homepage.component';
 
 const routes: Routes = [
   {
-    path: 'cadastrarusuario',
-    component: CadastroUsuarioComponent
-  },
-  {
-    path: 'cadastrarusuario/:id',
-    component: CadastroUsuarioComponent
-  },
-  {
-    path: 'listarusuarios',
-    component: ListagemUsuarioComponent
-  },
-  {
     path: '',
-    component: ListagemUsuarioComponent
+    component: HomepageComponent
+  },{
+    path: 'signup',
+    component: SignupComponent
+  },{
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

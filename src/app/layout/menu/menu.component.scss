@@ -1,5 +1,4 @@
 .menu-background{
-  background-color: indigo;
   color: white;
   display: flex;
   align-items: center;
@@ -7,11 +6,29 @@
     background-color: rgba(255, 255, 255, 0.05);
     margin: 3px;
   }
+  
   h1{
-    width: 100vw;
+    width: 100%;
     text-align: center;
     margin: 0;
   }
+
+  .menu-cont .mat-menu-trigger {
+    width: 7rem;
+    margin: auto;
+  }
+
+  .menu-cont .mat-menu-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 }
 
+.menu-cont {
+  margin: auto 0 auto auto;
+}
 
+.menu-header {
+  margin: .5rem;
+  width: 10rem;
+  cursor: pointer;
+}

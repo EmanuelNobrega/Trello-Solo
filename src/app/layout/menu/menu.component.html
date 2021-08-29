@@ -1,9 +1,16 @@
-<div class="menu-background">
-  <h1>TRELLO SOLO</h1>
-  <button mat-button [matMenuTriggerFor]="menu">Opções</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item [routerLink]="['/cadastrarusuario']">Criar Card</button>
-    <button mat-menu-item [routerLink]="['/listarusuarios']">Listar Cards</button>
-  </mat-menu>
-
+<div class="bg-primary text-light">
+  <div class="container" style="display: flex;">
+    <h1 [routerLink]="['']" style="margin-bottom: 0;">
+      <div class="menu-header text-light">
+        TRELLO SOLO
+      </div>
+    </h1>
+    <div class="menu-cont">
+      <button mat-button [matMenuTriggerFor]="menu">Opções</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/signup']">Cadastro</button>
+        <button mat-menu-item [routerLink]="['/login']">Login</button>
+      </mat-menu>      
+    </div>
+  </div>
 </div>
