@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from 'src/app/shared/services/user.service';
+import { UserService } from '../../shared/services/user.service';
 import { Router } from '@angular/router';
-import { User } from 'src/app/shared/model/user';
+import { User } from '../../shared/model/user';
 
 @Component({
   selector: 'app-homepage',
@@ -9,15 +9,11 @@ import { User } from 'src/app/shared/model/user';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-
   users: Array<User> = [];
 
-  constructor(private usrService: UserService, private roteador: Router) {
-  }
+  constructor(private usrService: UserService, private roteador: Router) {}
 
   ngOnInit(): void {
-    this.usrService.list().subscribe(
-      (users: User[]) => this.users = users
-    );
+    this.usrService.list().subscribe((users: User[]) => (this.users = users));
   }
 }
