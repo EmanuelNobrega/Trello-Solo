@@ -1,30 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../shared/services/user.service';
-import { ActivatedRoute, Router } from '@angular/router';
-import { User } from '../../shared/model/user';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SignupComponent } from './signup.component';
+import { FormsModule } from '@angular/forms';
+import { MatCard } from '@angular/material/card';
 
-@Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+@NgModule({
+  declarations: [SignupComponent],
+  imports: [
+    FormsModule,
+    CommonModule,
+    MatCard
+  ]
 })
-export class SignupComponent implements OnInit {
-  user: User;
-
-  constructor(
-    private userService: UserService,
-    private currentRoute: ActivatedRoute,
-    private router: Router
-  ) {
-    this.user = new User();
-  }
-
-  ngOnInit(): void {}
-
-  insertUser(): void {
-    this.userService.create(this.user).subscribe(ret => {
-      // navega para a página inicial após cadastro bem sucedido
-      this.router.navigate(['/']);
-    });
-  }
-}
+export class SignupModule { }
