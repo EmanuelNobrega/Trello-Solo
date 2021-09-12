@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../shared/services/user.service';
+import { UsuarioFirestoreService } from '../../shared/services/usuario-firestore.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from '../../shared/model/user';
 
@@ -13,7 +13,7 @@ export class SignupComponent implements OnInit {
 
   user: User;
 
-  constructor(private userService: UserService, private currentRoute: ActivatedRoute, private router: Router) {
+  constructor(private userService: UsuarioFirestoreService, private currentRoute: ActivatedRoute, private router: Router) {
     this.user = new User();
   }
 
