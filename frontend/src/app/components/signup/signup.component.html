@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="card form-signup-card">
     <form>
       <h2 class="mb-5">Cadastrar Usuário</h2>
@@ -21,4 +21,40 @@
       <button type="submit" class="btn btn-primary" (click)="insertUser()">Cadastrar</button>
     </form>
   </div>
+</div> -->
+
+
+<div class="signupcont">
+    <mat-card class="mat-card-signup" fxFlex="20%">
+      <mat-card-header>
+        <h2 class="signupheader">Cadastrar Usuário</h2>
+      </mat-card-header>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input [(ngModel)]="user.nome" matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Login</mat-label>
+        <input [(ngModel)]="user.login" matInput type="text" placeholder="Ex. pat@example.com">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="user.email" matInput type="email" placeholder="Ex. pat@example.com">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input [(ngModel)]="user.senha" matInput type="password" placeholder="********">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Repita Senha</mat-label>
+        <input [(ngModel)]="senha_rep" matInput type="password" placeholder="********">
+      </mat-form-field>
+
+      <button type="button" class="btn btn-primary insertbtn" (click)="insertUser()" style="width: 110px;">Cadastrar</button>
+    </mat-card>  
 </div>

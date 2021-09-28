@@ -4,5 +4,5 @@ export class Task {
     login!: string;
     tarefa!: string;
     vencimento!: Date;
-  }
+}
   
