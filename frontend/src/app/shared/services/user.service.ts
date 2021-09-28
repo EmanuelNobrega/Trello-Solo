@@ -23,15 +23,15 @@ export class UserService {
     return this.httpClient.post<User>(this.URL_USERS, user);
   }
 
-  // remover(id: number): Observable<object> {
-  //   return this.httpClient.delete(`${this.URL_USUARIOS}/${id}`);
-  // }
+  remove(id: number): Observable<object> {
+    return this.httpClient.delete(`${this.URL_USERS}/${id}`);
+  }
 
-  // pesquisarPorId(id: number): Observable<Usuario> {
-  //   return this.httpClient.get<Usuario>(`${this.URL_USUARIOS}/${id}`);
-  // }
+  getById(id: number): Observable<User> {
+    return this.httpClient.get<User>(`${this.URL_USERS}/${id}`);
+  }
 
-  // atualizar(usuario: Usuario): Observable<Usuario> {
-  //   return this.httpClient.put<Usuario>(`${this.URL_USUARIOS}/${usuario.id}`, usuario);
-  // }
+  atualizar(user: User): Observable<User> {
+    return this.httpClient.put<User>(`${this.URL_USERS}/${user.id}`, user);
+  }
 }

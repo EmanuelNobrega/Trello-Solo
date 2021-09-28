@@ -13,7 +13,7 @@ export class SignupComponent implements OnInit {
 
   user: User;
 
-  constructor(private userService: UserService, private currentRoute: ActivatedRoute, private router: Router) {
+  constructor(private userService: UserService, private router: Router) {
     this.user = new User();
   }
 
