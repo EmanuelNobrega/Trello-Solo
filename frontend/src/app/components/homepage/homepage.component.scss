@@ -22,10 +22,21 @@
     .mat-card-header .mat-card-title {
         font-size: 14px;
     }
+
+    .mat-card-content {
+        margin-bottom: 0 !important;        
+    }
+}
+.homebtncont {
+    display: flex;
+    margin-bottom: .5rem;
+
+    .btn {
+        margin: .5rem 0;
+    }
 }
 
 .home_header {
-    width: 320px;
     padding: 15px;
     text-align: center;
     border-radius: .3rem;
