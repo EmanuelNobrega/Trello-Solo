@@ -1,0 +1,20 @@
+.logincont {
+    display: flex;
+
+    .loginheader{
+        margin: 1rem 1rem 1.5rem 0;
+    }
+}
+
+.mat-card-login {
+    margin: 200px auto;
+    width: 400px;
+}
+.mat-card {
+    display: flex;
+    flex-direction: column;
+
+    .mat-card-header .mat-card-title {
+        font-size: 14px;
+    }
+}
