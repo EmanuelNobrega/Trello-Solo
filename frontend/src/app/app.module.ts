@@ -16,6 +16,10 @@ import { LoginComponent } from './components/login/login.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { CreatetaskComponent } from './components/createtask/createtask.component';
 import { ListtasksComponent } from './components/listtasks/listtasks.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { ListtasksComponent } from './components/listtasks/listtasks.component';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports: [
     FormsModule

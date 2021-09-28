@@ -14,7 +14,7 @@ public class Task {
     private String tarefa;
     private Date vencimento;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "user_id")
     private User user;
 

@@ -1,7 +1,7 @@
 export class Task {
     id!: number;
     nome!: string;
-    login!: string;
+    user_id!: number;
     tarefa!: string;
     vencimento!: Date;
 }
