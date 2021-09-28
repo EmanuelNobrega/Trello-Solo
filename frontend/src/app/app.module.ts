@@ -16,7 +16,6 @@ import { LoginComponent } from './components/login/login.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { CreatetaskComponent } from './components/createtask/createtask.component';
 import { ListtasksComponent } from './components/listtasks/listtasks.component';
-import { FirestoreModule } from './firestore/firestore.module';
 
 @NgModule({
   declarations: [
@@ -38,8 +37,7 @@ import { FirestoreModule } from './firestore/firestore.module';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    HttpClientModule,
-    FirestoreModule
+    HttpClientModule
   ],
   exports: [
     FormsModule

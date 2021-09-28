@@ -9,8 +9,7 @@ import { User } from '../model/user';
 
 export class UserService {
 
-  URL_USERS = 'http://localhost:3000/users';
-  URL_TASKS = 'http://localhost:3000/tasks'
+  URL_USERS = 'http://localhost:8080/users';
 
   constructor(private httpClient: HttpClient) {
   }
